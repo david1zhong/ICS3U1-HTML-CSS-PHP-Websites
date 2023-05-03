@@ -1,0 +1,154 @@
+body {
+	padding: 20px;
+	/* background: #8AAAE5; */
+	background-image: url("https://images2.alphacoders.com/720/72092.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+h1 {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #ffffff;
+	margin-top: 0;
+}
+h2 {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #ffffff;
+}
+
+.activities_1 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #ff0000; /* http://www.css3.info/preview/box-shadow/ */
+	margin-bottom: 0;
+}
+
+.activities_2-2 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #ff6e00; /* http://www.css3.info/preview/box-shadow/ */
+}
+
+.activities_2-3 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #ffff00; /* http://www.css3.info/preview/box-shadow/ */
+}
+
+.activities_2-4 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #1eb41e; /* http://www.css3.info/preview/box-shadow/ */
+}
+
+.activities_2-5 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #00d2ff; /* http://www.css3.info/preview/box-shadow/ */
+}
+
+.activities_2-6 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #3737c8; /* http://www.css3.info/preview/box-shadow/ */
+}
+
+.activities_2-7 {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #d200ff; /* http://www.css3.info/preview/box-shadow/ */
+}
+
+.activities_other {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #964B00; /* http://www.css3.info/preview/box-shadow/ */
+}
+
+.activities_fpt {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	background: #000000; 
+	padding: 20px;
+	font-size: 1.1em;  /* 110% of default font size */
+	font-family: 'Roboto';	/* https://fonts.google.com/ */	
+	border-radius: 0.5em 0.5em 0.5em 0.5em; /* 50% border radius */
+	box-shadow: 0px 0px 10px #FFFFFF; /* http://www.css3.info/preview/box-shadow/ */
+}
+
+/* default link styles */
+a:link, a:visited, a:active {
+	position: relative;
+	display: inline-block;
+	color: #ffffff;
+	padding: 5px;
+	text-decoration: none;
+	transition: all 0.5s ease; /* ease the hover transition */
+}
+a:hover {
+	color: #000066;
+	text-decoration: none;
+	background: yellow;
+}
+
