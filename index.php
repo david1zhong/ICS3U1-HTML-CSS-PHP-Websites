@@ -27,7 +27,6 @@
 
 	<div class="activities_2-4">
 		<h1>Activities 2.4</h1>
-		<a href="contact-form.php">Activity 2.4C [CONTACT FORM]</a><br />
 		<a href="activity-dice-game.php">Activity 2.4D [DICE GAME]</a><br /><br />
 	</div>
 
