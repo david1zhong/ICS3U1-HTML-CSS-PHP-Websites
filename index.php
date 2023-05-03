@@ -48,8 +48,6 @@
 		<a href="perftask-rock-paper-scissors.php">TASK #3 []</a><br>
 		<a href="perftask-rock-paper-scissors.php">TASK #4 []</a><br>
 	</div>
-
-	<!-- end main content -->
 	
 	<!-- turn work in widget -->
 	<?php include $_SERVER['DOCUMENT_ROOT'] . "/marking-rubric/turn-work-in.inc.php"; ?>
