@@ -1,0 +1,141 @@
+<?php if (!isset($_SESSION)) { session_start(); } ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ACTIVITY 2.2 - David Zhong</title>	
+	
+	<meta name="description" content="Activity 2-2">
+	<meta name="author" content="David Zhong">
+
+	<style>
+		body {
+			font-family: 'Trebuchet MS', sans-serif;
+			color: #ffffff;
+			background-image: url("https://cdn.wallpapersafari.com/1/97/co341S.jpg");
+	        background-repeat: no-repeat;
+	        background-size: cover;
+			font-size: 1.5em;
+			text-align: center;
+		}
+
+		.input_container {
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+			background: #000000; 
+			padding: 20px;
+			border-radius: 0.5em 0.5em 0.5em 0.5em;
+			box-shadow: 0px 0px 10px #39FF14;
+		}
+
+		.container {
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+			background: #000000; 
+			padding: 20px;
+			border-radius: 0.5em 0.5em 0.5em 0.5em;
+			box-shadow: 0px 0px 10px #00dbff;
+		}
+
+		.container_error {
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+			background: #000000; 
+			padding: 20px;
+			border-radius: 0.5em 0.5em 0.5em 0.5em;
+			box-shadow: 0px 0px 10px #ff0000;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Acceleration of Gravity</h1>
+
+	<p>This page outputs the planets that have an acceleration between the user inputted values of starting acceleration and ending acceleration (0 m/s<sup>2</sup> and 24m/s<sup>2</sup>). Every planet has its own acceleration of gravity. </p>
+
+	<br>
+
+	<form class="input_container">
+		<label for="StartingAcceleration">Starting Acceleration: </label>
+	    <input type="number" id="StartingAcceleration" name="StartingAcceleration">
+
+	    <br>
+
+	    <label for="EndingAcceleration">Ending Acceleration: </label>
+	    <input type="number" id="EndingAcceleration" name="EndingAcceleration">
+
+	    <br>
+
+	    <input type="submit" value="Submit" name="Submit" id="submitbtn">
+
+	</form>
+
+	<?php
+
+	if(isset($_GET['Submit'])) {
+		$StartingAcceleration = $_GET['StartingAcceleration'];
+		$EndingAcceleration = $_GET['EndingAcceleration'];
+
+		if($StartingAcceleration >= 0 && $StartingAcceleration <= 24) {
+
+			if ($EndingAcceleration >= 0 && $EndingAcceleration <= 24) {
+
+				if ($EndingAcceleration >= $StartingAcceleration) {
+					function calculateAcceleration($StartingAcceleration, $EndingAcceleration) {
+						echo "<br><br><div class='container'>";
+
+						$acceleration['Mercury'] = 3.76;
+						$acceleration['Venus'] = 9.04;
+						$acceleration['Earth'] = 9.8;
+						$acceleration['Mars'] = 3.77;
+						$acceleration['Jupiter'] = 23.6;
+						$acceleration['Saturn'] = 10.06;
+						$acceleration['Uranus'] = 8.87;
+						$acceleration['Neptune'] = 11.23;
+
+						$FoundPlanet = false;
+
+						foreach ($acceleration as $planet => $planetAcceleration) {
+							if ($planetAcceleration >= $StartingAcceleration && $planetAcceleration <= $EndingAcceleration) {
+
+								$LowercasePlanetName = strtolower($planet);
+						    	
+						    	echo "$planet: $planetAcceleration m/s<sup>2</sup><br><img src='https://icsprogramming.ca/2017-2018/hutchison6be87/grade11/images/planets/$LowercasePlanetName.png' height='100px' width='100px'><br>";
+
+						    	$FoundPlanet = true;	
+						    }		
+						}
+ 	
+						if (!$FoundPlanet) {
+							echo "<span style='color: red;'>No Planets Found</span>";
+						}
+
+						echo "</div>";
+					}
+
+					calculateAcceleration($StartingAcceleration, $EndingAcceleration);
+
+				} else {
+					echo "<br><br><div class='container_error'><span style='color: red;'>Starting Acceleration must be greater than or equal to Ending Acceleration</span></div>";
+				}
+				
+
+
+			} else {
+				echo "<br><br><div class='container_error'><span style='color: red;'>Error! Ending Acceleration must be greater than 0 and less than 24</span></div>";
+			}
+
+		} else {
+			echo "<br><br><div class='container_error'><span style='color: red;'>Error! Starting Acceleration must be greater than 0 and less than 24</span></div>";
+		}
+	}
+
+	?>
+
+
+</body>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/marking-rubric/turn-work-in.inc.php"; ?>
+</html>
