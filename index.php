@@ -19,7 +19,7 @@
 	
 	<div class="activities_2-3">
 		<h1>Activities 2.3</h1>
-		<a href="Choose%20Your%20Own%20Adventure%20(CY0A).php">Choose Your Own Adventure</a><br>
+		<a href="Choose%20Your%20Own%20Adventure%20(CYOA).php">Choose Your Own Adventure</a><br>
 	</div>
 
 	<br><br>
