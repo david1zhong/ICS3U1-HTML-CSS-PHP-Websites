@@ -1,4 +1,3 @@
-<?php if (!isset($_SESSION)) { session_start(); } ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,22 +33,18 @@
  
 	<div class="activities_2-7">
 		<h1>Activities 2.7</h1>
-		<a href="activity-2-7-acceleration-of-gravity.php">Activity 2.7B [GRAVITY ARRAY]</a><br />
-		<a href="activity-2-7-binary-to-decimal.php">Activity 2.7C [BINARY]</a><br />
+		<a href="Acceleration%20of%20Gravity.php">Activity 2.7B [GRAVITY ARRAY]</a><br />
+		<a href="Binary.php">Activity 2.7C [BINARY]</a><br />
 	</div>
  
 	<br><br>
 
 	<div class="activities_fpt">
 		<h1>FPT</h1>
-		<a href="perftask-rock-paper-scissors.php">TASK #1 [Rock Paper Scissors]</a><br>
-		<a href="perftask-rock-paper-scissors.php">TASK #2 []</a><br>
-		<a href="perftask-rock-paper-scissors.php">TASK #3 []</a><br>
-		<a href="perftask-rock-paper-scissors.php">TASK #4 []</a><br>
+		<a href="Choose%20Your%20Own%20Adventure%20(CY0A).php">Choose Your Own Adventure</a><br>
+		<a href="Dice%20Game.php">Dice Game</a><br>
+		<a href="perftask-rock-paper-scissors.php">Rock Paper Scissors</a><br>
 	</div>
-	
-	<!-- turn work in widget -->
-	<?php include $_SERVER['DOCUMENT_ROOT'] . "/marking-rubric/turn-work-in.inc.php"; ?>
 </body>
 </html>
 
