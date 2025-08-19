@@ -19,14 +19,14 @@
 	
 	<div class="activities_2-3">
 		<h1>Activities 2.3</h1>
-		<a href="choose-your-adventure.php">Activity 2.3c [CYOA]</a><br /><br />
+		<a href="Choose%20Your%20Own%20Adventure%20(CY0A).php">Choose Your Own Adventure</a><br>
 	</div>
 
 	<br><br>
 
 	<div class="activities_2-4">
 		<h1>Activities 2.4</h1>
-		<a href="activity-dice-game.php">Activity 2.4D [DICE GAME]</a><br /><br />
+		<a href="Dice%20Game.php">Dice Game</a><br>
 	</div>
 
 	<br><br>
@@ -41,8 +41,6 @@
 
 	<div class="activities_fpt">
 		<h1>FPT</h1>
-		<a href="Choose%20Your%20Own%20Adventure%20(CY0A).php">Choose Your Own Adventure</a><br>
-		<a href="Dice%20Game.php">Dice Game</a><br>
 		<a href="perftask-rock-paper-scissors.php">Rock Paper Scissors</a><br>
 	</div>
 </body>
